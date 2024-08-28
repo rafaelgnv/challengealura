@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DecodeR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="painel-principal">
+        <section class="titulo">
+            <h1>DecodeR</h1>
+        </section>
+        <section class="conteudo">
+            <section class="conteudo-esquerda">
+                <textarea id="input-text" placeholder="Digite o texto aqui..."></textarea>
+                <p class="aviso">Apenas letras minúsculas e sem acento</p>
+                <div class="container-botao">
+                    <button id="encrypt-button">Criptografar</button>
+                    <button id="decrypt-button">Descriptografar</button>
+                </div>
+            </section>
+            
+            <section class="conteudo-direita">
+                <textarea id="output-text" readonly placeholder="Texto codificado aparecerá aqui..."></textarea>
+                <p id="right-warning">Copie o texto criptografado / descriptografado.</p> <!-- Aviso na caixa da direita -->
+                <button id="copy-button">Copiar</button>
+            </section>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
